@@ -649,7 +649,7 @@ app.get("/ebillet/:id",(req,res)=>{
 sequelize.authenticate()
     .then(()=>console.log('connection à la base de donnée ok '))
     .then(()=>{
-        app.listen(process.env.SERVER_PORT,()=>{console.log(`Le serveur fonctionne sur le port ${process.env.SERVER_PORT}`)});
+        app.listen(process.env.PORT,()=>{console.log(`Le serveur fonctionne sur le port ${process.env.SERVER_PORT}`)});
     })
     .catch(err=>console.log('erreur sur la base de donnée', err))
 // express 

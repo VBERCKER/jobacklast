@@ -58,7 +58,7 @@ const db = mysql.createConnection({
     }));
     
 
-export const passportG = passport.use("google", new GoogleStrategy({
+/*export const passportG = passport.use("google", new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT,
     clientSecret : process.env.GOOGLE_SECRET,
     callbackURL: "http://localhost:5173/compte",
@@ -98,7 +98,7 @@ export const passportG = passport.use("google", new GoogleStrategy({
      }
 }))
 
-
+*/
 // passport 
 
 passport.serializeUser((user, cb)=>{  //stocker les donne utilisateur en local 
